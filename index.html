@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 //functin for the results
 	function resultsCalculator(){ //function of the results page
-	var resultText = document.getElementById("results section"); //variable for results
+	var resultText = document.getElementById("results Page"); //variable for results
 	var allergypercent = (allergy_count / (allergy_count + cold_count)) * 100; //equation for allergy
 	var coldpercent= (cold_count / (allergy_count + cold_count)) * 100; //equation for cold
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%<br> Probability it is a cold =" + coldPercent + "%"; //results output as percentages
@@ -136,17 +136,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
-	<a href="#results section" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
-	<a href="#results section" onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#results Page" onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
+	<a href="#results Page" onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	</div>
 </div>
-<div class="page" id="results section"> <!--start of results page-->
+<div class="page" id="results Page"> <!--start of results page-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1> <!--header for results page-->
 	</div> <!-- starts  division for the content-->
 	
 	<div id="content" class="w3-container">
-		<p id="results section"></p> <!--results paragraph-->
+		<p id="results Page"></p> <!--results paragraph-->
 	</div> <!--end of results page-->
 </div>
 	
